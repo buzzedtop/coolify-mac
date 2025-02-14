@@ -12,5 +12,6 @@ jobs:
           brew update
           brew install docker
       - name: Install Coolify
-        run: |
+        run: 
+          echo "https://coolify.io/docs/installation#manual-installation"
           curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash
