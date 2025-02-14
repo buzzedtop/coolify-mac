@@ -7,11 +7,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Install GitHub CLI
+      - name: InstalI Docker
         run: |
           brew update
-          brew install gh
-      - name: Install Microsoft Edge
+          brew install docker
+      - name: Install Coolify
         run: |
-          brew update
-          brew install --cask microsoft-edge
+          curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash
