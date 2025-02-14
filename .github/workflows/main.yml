@@ -14,4 +14,7 @@ jobs:
       - name: Install Coolify
         run: 
           echo "https://coolify.io/docs/installation#manual-installation"
+          mkdir -p /data/coolify/{source,ssh,applications,databases,backups,services,proxy,webhooks-during-maintenance}
+          mkdir -p /data/coolify/ssh/{keys,mux}
+          mkdir -p /data/coolify/proxy/dynamic
           curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash
